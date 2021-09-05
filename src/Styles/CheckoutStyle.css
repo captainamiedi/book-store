@@ -1,0 +1,16 @@
+  #ex4 .p1[data-count]:after{
+    position:absolute;
+    right:10%;
+    top:8%;
+    content: attr(data-count);
+    font-size:40%;
+    padding:.6em;
+    border-radius:50%;
+    line-height:1em;
+    color: white;
+    text-align:center;
+    min-width: 1em;
+    background: #65C100;
+    ;
+    /* //font-weight:bold; */
+  }

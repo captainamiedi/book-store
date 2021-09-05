@@ -1,0 +1,75 @@
+.card-image{
+    height: 183px;
+    width: 110px;
+
+}
+
+.card-container {
+    display: flex;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.others-container{
+    padding-left: 13px;
+}
+.vertical-line{
+    border-left: 1px solid #EEEEEE;
+    padding: 10px;
+}
+.book-vertical-line{
+    border-left: 1px solid #EEEEEE;
+    /* padding: 10px; */
+}
+.card-title-text {
+    font-weight: bold;
+    margin: 2px;
+    padding-bottom: 6px;
+}
+.author-text{
+    font-size: 14px;
+}
+.like-container {
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.price-container {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.span-display {
+    display: block;
+}
+.available-conatainer {
+    display: block;
+    padding-left: 8px;
+}
+.out-stock {
+    color: #CC4C2F;
+}
+.available {
+    color: #6FC510;
+}
+.cart-style{
+    padding-left: 8px;
+    font-weight: bold;
+}
+.user {
+    padding-right: 12px;
+}
+.like {
+    padding-right: 13px;
+}
+.cart-container {
+    cursor: pointer;
+}
+
+.book-details-info {
+    max-width: 120px;
+}
+.details-text {
+    font-weight: bold;
+
+}

@@ -1,0 +1,5 @@
+.logo-header-container{
+    padding: 25px 15px 25px 40px; 
+    display: flex;
+    justify-content: space-between;
+}

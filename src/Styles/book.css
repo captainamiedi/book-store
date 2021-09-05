@@ -1,0 +1,64 @@
+.layout {
+    padding: 10px 40px;
+    background-color: #FEFEFE;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header {
+    /* position: fixed; */
+    /* top: 0; */
+    width: 100%;
+}
+.content-container {
+    padding: 38px 40px;
+    display: flex;
+}
+.back-btn-container {
+    padding-bottom: 38px;
+}
+.copies-text {
+    font-size: 14px;
+    color: #65C100;
+    font-weight: 400;
+}
+.book-available-container {
+    padding-top: 74px;
+}
+.price-text {
+    font-size: 36px;
+    font-weight: 300;
+}
+.book-cart-container {
+    height: 70px;
+    width: 243px;
+    background: #000000;
+    color: #FEFEFE;
+}
+.cart-main-container {
+    padding-top: 18px;
+}
+.cart-cover {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+.cart-text {
+    font-size: 18px;
+}
+.cart-icon{
+    padding-right: 28px;
+    font-size: 20px;
+}
+.second {
+    padding-left: 103px;
+    padding: 50px;
+}
+.book-title{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 41px;
+    margin: 0px;
+}
+.book-author {
+    font-weight: bold;
+    font-size: 14px;
+}
