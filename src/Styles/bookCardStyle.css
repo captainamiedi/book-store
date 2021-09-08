@@ -77,7 +77,7 @@
     border: 1px solid #EEEEEE;
     box-shadow: 0px 5px 20px 5px rgb(0 0 0 .7);
 }
-.book-details-main {
-    display: "flex";
-     justify-content: "space-between",
+.book-details-main-container {
+    display: flex;
+    justify-content: space-between;
 }

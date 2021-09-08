@@ -36,7 +36,7 @@ $ yarn start
 ## Deployment
 
 Book Store is hosted on
-* [Heroku](https://pedantic-hodgkin-028bb8.netlify.app)
+* [Netlify](https://pedantic-hodgkin-028bb8.netlify.app)
 
 ## Built With
 
