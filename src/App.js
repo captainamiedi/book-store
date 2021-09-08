@@ -4,10 +4,11 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  useQuery,
-  gql
+
 } from "@apollo/client";
 import Routes from './Route/Routes';
+import { Provider } from 'react-redux'
+import {store} from './Redux/store'
 
 
 
@@ -18,9 +19,11 @@ const client = new ApolloClient({
 
 function App() {
   return (
+    <Provider store={store}>
     <ApolloProvider client={client}>
       <Routes />
     </ApolloProvider>
+    </Provider>
   );
 }
 
