@@ -92,3 +92,9 @@
   padding-right: 45px;
   font-size: 20px;
 }
+
+@media screen and (max-width: 800px) {
+  .modal .modal-main {
+    width: 90%;
+  }
+}

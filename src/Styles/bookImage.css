@@ -2,3 +2,10 @@
     width: 243px;
     height: 364px;
 }
+
+@media screen and (max-width: 800px) {
+    .book-image {
+     width: 110px;
+     height: 183px;
+    }
+  }
