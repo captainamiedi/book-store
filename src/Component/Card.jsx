@@ -4,18 +4,35 @@ import StarRatings from "react-star-ratings";
 import user from "../assest/user.png";
 
 export default function Card({ data, handleSelect, handleAddCart }) {
+  const [mouseMove, setMouseMove] = React.useState({
+    show: false,
+    id: "",
+  });
+  const handleMoveIn = (item) => {
+    setMouseMove({ ...mouseMove, show: true, id: item });
+  };
+  const handleMoveout = () => {
+    setMouseMove({ ...mouseMove, show: false, id: "" });
+  };
   return (
+    <div 
+    onMouseEnter={() => handleMoveIn(data?.id)}
+    onMouseLeave={() => handleMoveout()}
+    className={
+      mouseMove?.id === data?.id && mouseMove?.show ? "card-container-shadow" : ""
+    }
+    >
     <div className="card-container ">
       <div>
         <img src={data?.image_url} alt="" srcset="" className="card-image" onClick={() => handleSelect(data?.id)} />
       </div>
       <div className="others-container">
-        <p className="card-title-text">{data?.title}</p>
+        <p className="card-title-text" onClick={() => handleSelect(data?.id)}>{data?.title}</p>
         <span className="author-text">
           {data?.authors?.map((item) => item?.name)}-{" "}
           {new Date(data?.published_at).getFullYear()}
         </span>
-        <div className="like-container">
+        <div className="like-container" onClick={() => handleSelect(data?.id)}>
           <div className="span-display user">
             <img src={user} alt="" srcset="" />
             <span>{data?.likes}</span>
@@ -35,7 +52,7 @@ export default function Card({ data, handleSelect, handleAddCart }) {
             />
           </div>
         </div>
-        <div className="price-container">
+        <div className="price-container" onClick={() => handleSelect(data?.id)}>
           <span className="span-display">{`$${data?.price}`}</span>
           <span className="available-conatainer">
             {data?.available_copies === 0 ? (
@@ -54,6 +71,7 @@ export default function Card({ data, handleSelect, handleAddCart }) {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 }

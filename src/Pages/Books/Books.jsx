@@ -83,7 +83,7 @@ export default function Books() {
             </div>
 
             <div className="grid-container">
-               {localData?.map((item) => <Card data={item} key={item.id} handleSelect ={handleCardSelect} handleAddCart={handleAddCart} />)}
+               {localData?.map((item) => <div key={item.id} className='card-main'> <Card data={item} handleSelect ={handleCardSelect} handleAddCart={handleAddCart} /> </div>)}
             </div>
             {/* {showModal && <Cart />} */}
 
