@@ -22,6 +22,7 @@ export default function CarouselComponent({ data, handleSelect }) {
       centerSlidePercentage={18}
       showThumbs={false}
       autoPlay={true}
+      infiniteLoop={true}
     >
       {data?.books?.map((item, id) => (
         <div
@@ -39,7 +40,7 @@ export default function CarouselComponent({ data, handleSelect }) {
             }
           />
           {mouseMove?.id === id && mouseMove?.show && (
-            <section>
+            <section className='carousel-section'>
               <div className="section-container">
               <span className=''>{item?.available_copies === 0 ? <span className='out-stock'>Out of Stock</span> : <span className='available'>Available</span>}</span>
                 <h4>{item?.title}</h4>

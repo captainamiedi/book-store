@@ -32,6 +32,7 @@
     width: 243px;
     background: #000000;
     color: #FEFEFE;
+    cursor: pointer;
 }
 .cart-main-container {
     padding-top: 18px;
