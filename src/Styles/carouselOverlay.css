@@ -14,16 +14,17 @@ section  {
 .section-container {
     text-align: left;
     padding-left: 30px;
+    cursor: pointer;
 }
 
 .carousel-image {
-    height: "330px";
-    width: "220px"
+    height: 330px;
+    width: 220px;
 }
 
 @media screen and (max-width: 800px) {
     .carousel-image {
-        height: "210px";
-        width: "140px"
+        height: 210px;
+        width: 140px;
     }
   }
