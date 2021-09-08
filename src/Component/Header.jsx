@@ -27,7 +27,7 @@ export default function Header({
             </p>
           </div>
         </div>
-        <div className='header-input-search'>
+        <div style={{ width: "30%" }}>
           <InputComponent handleSearch={handleSearch} />
         </div>
         <div style={{ display: "flex" }}>
