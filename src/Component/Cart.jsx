@@ -64,7 +64,7 @@ export default function Cart({ show, handleClose, children }) {
         </div>}
         {cartData?.cart.length > 0 &&  <div className="cart-subtotal">
           <span className="cart-subtotal-label">Subtotal</span>
-          <span className="cart-subtotal-text">${subTotal}</span>
+          <span className="cart-subtotal-text">${subTotal.toFixed(2)}</span>
         </div>}
 
         {cartData?.cart.length > 0 &&  <div className="cart-checkout-container">

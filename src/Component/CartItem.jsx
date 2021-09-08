@@ -2,7 +2,7 @@ import React from 'react'
 import '../Styles/cartItem.css'
 
 export default function CartItem({data, increase, decrease, removeCart}) {
-    console.log(data, 'data');
+    // console.log(data, 'data');
     return (
         <div>
         <div className='cart-item-container'> 
@@ -30,7 +30,7 @@ export default function CartItem({data, increase, decrease, removeCart}) {
                 <span className='inner-reduce'>+ </span>
                     </span>
                 </div>
-                <span className='cart-item-total'>${data?.price * data?.count}</span>
+                <span className='cart-item-total'>${(data?.price * data?.count).toFixed(2)}</span>
             </div>
 
         </div>
