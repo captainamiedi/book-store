@@ -6,7 +6,7 @@ import { format } from "date-fns/esm";
 
 export default function BookDetails({ data }) {
   return (
-    <div style={{ display: "flex", justifyContent: "space-between",  }}>
+    <div className='book-details-main'>
       <div style={{ display: "block" }}>
        <p> <img src={user} alt="" srcset="" /> </p>
         <span>{data?.likes}</span>

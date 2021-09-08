@@ -63,3 +63,16 @@
     font-weight: bold;
     font-size: 14px;
 }
+
+@media screen and (max-width: 800px) {
+    .layout {
+        padding: 10px; 
+    }
+    .content-container {
+        display: block;
+        padding: 10px;
+    }
+    .second {
+        padding: 10px
+    }
+}

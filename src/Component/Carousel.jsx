@@ -34,9 +34,8 @@ export default function CarouselComponent({ data, handleSelect }) {
           <img
             src={item?.image_url}
             alt={item?.title}
-            style={{ height: "330px", width: "220px" }}
             className={
-              mouseMove?.id === id && mouseMove?.show ? "image-overlay" : ""
+              mouseMove?.id === id && mouseMove?.show ? "image-overlay carousel-image" : "carousel-image"
             }
           />
           {mouseMove?.id === id && mouseMove?.show && (

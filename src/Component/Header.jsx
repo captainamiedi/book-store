@@ -20,18 +20,14 @@ export default function Header({
             <p style={{ margin: "4px" }}>
               <span style={{ fontWeight: "bold" }}>Quidax Books </span> <br />{" "}
               <span
-                style={{
-                  fontWeight: "100",
-                  color: "grey",
-                  fontStyle: "italic",
-                }}
+                className='header-sub-title-text'
               >
                 A flimsy book company{" "}
               </span>
             </p>
           </div>
         </div>
-        <div style={{ width: "30%" }}>
+        <div className='header-input-search'>
           <InputComponent handleSearch={handleSearch} />
         </div>
         <div style={{ display: "flex" }}>

@@ -49,7 +49,7 @@ export default function Book() {
           <div className="back-btn-container">
             <BackComponent handleBack={handleGoBack} />
           </div>
-          <BookImage image_url={data?.book?.image_url} />
+          <BookImage image_url={data?.book?.image_url}  />
           <div className="book-available-container">
             <p className="copies-text">
               {data?.book?.available_copies} Copies Available
